@@ -1,17 +1,50 @@
-# Arquitectura_Datos
-Trabajos realizados para la materia de arquitectura de datos.
+# Arquitectura de Datos
 
+Este repositorio contiene los trabajos realizados para la materia **Arquitectura de Datos**.
 
-#Trabajo transformacion de datos a travez de POWER BY
-Se extrajo la BD de Evaluación de Tierras para el cultivo tecnificado de maíz (Zea Mays L.), en el departamento de Guaviare. Que cuenta con un tamaño de 3.589 filas y 9 columnas.
-Se extrajo la BD con los siguientes titulos: Objetic, Municipio, Departamento, Código departamento, Código municipio, Gridcode, Área (ha), Aptitud, Consecutivo.
-Se le elimino la coluumna de objetic ya que esta se creo a la hora de extraer la informacion como punto de partida para enumerar las filas.
-Se remplazo en la columna de area los puntos por comas
-Se cambio el codigo de departamento por un entero
-Se cambio el codigo de municipio por un entero
-Se cambio el gridcode por un entero
-Se cambio el concecutivo por un decimal
+---
 
-#Graficas
-Se realizo una grafica de barra por (Recuento de Área (ha) por Municipio)
-Se realizo una grafica circular por (Recuento de aptitud por municipio)
+## 🛠️ Transformación de Datos con Power BI
+
+Se trabajó con una base de datos proveniente de la **Evaluación de Tierras para el Cultivo Tecnificado de Maíz (Zea Mays L.)** en el departamento de **Guaviare**.
+
+### 📊 Detalles de la Base de Datos
+
+- **Filas:** 3,589  
+- **Columnas:** 9
+
+### 🧾 Columnas Originales
+
+- `Objetic`  
+- `Municipio`  
+- `Departamento`  
+- `Código departamento`  
+- `Código municipio`  
+- `Gridcode`  
+- `Área (ha)`  
+- `Aptitud`  
+- `Consecutivo`
+
+### 🔄 Transformaciones Realizadas
+
+- ❌ Se eliminó la columna `Objetic`, ya que solo servía como enumerador temporal al extraer los datos.
+- ✅ En la columna `Área (ha)`, se reemplazaron los **puntos (.)** por **comas (,)** para un formato numérico correcto.
+- 🔢 Se transformaron las siguientes columnas para asegurar un formato consistente:
+  - `Código departamento`: convertido a **entero**.
+  - `Código municipio`: convertido a **entero**.
+  - `Gridcode`: convertido a **entero**.
+  - `Consecutivo`: convertido a **decimal**.
+
+---
+
+## 📈 Visualizaciones en Power BI
+
+Se generaron las siguientes gráficas para el análisis de los datos:
+
+1. **📊 Gráfico de Barras**  
+   - Recuento de **Área (ha)** por **Municipio**.
+
+2. **🥧 Gráfico Circular (Torta)**  
+   - Distribución de **Aptitud** por **Municipio**.
+
+---
