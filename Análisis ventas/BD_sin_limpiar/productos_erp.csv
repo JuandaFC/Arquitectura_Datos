@@ -1,0 +1,21 @@
+ProdcutID,Nombre,Categoria,PrecioLista,Costo,Activo,SKU,ColumnaIrrelevante
+P006,Impresora Láser Pro 1200,Oficina,1450.0,1100.0,Sí,IMP1200,borrar
+P007,Tablet Nova 10,Computo,980.0,720.0,NO,TAB-N10,borrar
+P008,Cámara Web FullHD,Accesorios,220.0,140.0,True,CAM-FHD,borrar
+P009,Proyector XBeam 3000,Pantallas,1999.9,1520.5,Si,PB3000,borrar
+P010,Disco Duro Externo 2TB,Almacenamiento,399.9,250.0,sí,HDD2TB,borrar
+P011,Memoria USB 64GB,Accesorios,59.9,30.0,Yes,USB64,borrar
+P012,Silla Ergonómica ErgoPlus,Oficina,899.9,600.0,Sí,ERG-PLUS,borrar
+P013,Audífonos Inalámbricos Pro,Accesorios,299.0,180.0,no,AUD-PRO,borrar
+P014,Teclado Inalámbrico Slim,Accesorios,120.0,75.0,TRUE,KEY-SLIM,borrar
+"P015,Laptop Orion 16"""",Computo,3299.0,2400.0,si,OR16-2025,borrar"
+P016,Monitor Curvo 34'' UHD,Pantallas,1899.0,1350.0,Sí,MN34-CU,borrar
+P017,Router WiFi 6 AX3000,Redes,550.0,320.0,sí,RTR-AX3000,borrar
+P018,Proyector Portátil MiniBeam,Pantallas,780.0,500.0,No,MINI-BEAM,borrar
+P019,Smartwatch Active 2,Accesorios,650.0,400.0,true,SW-ACT2,borrar
+P020,Disco SSD 1TB NVMe,Almacenamiento,750.0,520.0,SI,SSD1TB,borrar
+P021,Hub USB-C 4 Puertos,Accesorios,180.0,95.0,Sí,HUB-C4,borrar
+P022,Altavoces Bluetooth X2,Accesorios,350.0,210.0,no,SPK-X2,borrar
+"P023,Laptop Nova Air 13"""",Computo,2100.0,1600.0,TRUE,NVAIR13,borrar"
+P024,Monitor 24'' LED,Pantallas,890.0,640.0,Sí,MN24LED,borrar
+P025,Impresora Multifuncional Inkjet,Oficina,1350.0,980.0,Si,IMP-INJ,borrar
