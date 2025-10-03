@@ -151,6 +151,7 @@ if [Dic] = "-" or [Dic] = null then
     if [Column15] <> null then [Column15] 
     else [Column16] 
 else [Dic]
+   ```
 
 
 ### 7️⃣ Ventas_ordenes 
