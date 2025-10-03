@@ -156,20 +156,26 @@ else [Dic]
 - Configurar las fecha en columnas distintas mes, año, dia
 ----------------------
 
-Unificar las tablas de empleados, Clientes y Proveedores en una tabla que se llama contactos
-  - Se adecuan todas las columnas para que tengan las misma cantidad de columnas y tambien que contengan los mismos nombres
+## 🔗 Integración de Tablas
 
-##Se relacionan las tablas venta_detalles, ventas_mesuales y productos ERP
+### 📌 Unificación de Contactos
+Se unificaron las tablas **Empleados, Clientes y Proveedores** en una sola tabla llamada **Contactos**.  
+- Todas las columnas se adecuaron para tener la misma cantidad y los mismos nombres, garantizando consistencia en el modelo.  
 
+---
 
-  <img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/269706ec-e84e-4515-b11f-3539623734bc" />
-##Primera Relacion
+### 📌 Relaciones del Modelo
+Se establecieron relaciones entre las tablas:  
+- `venta_detalles`  
+- `ventas_mensuales`  
+- `productos_ERP`  
 
+#### 🟢 Primera Relación
+<img width="906" height="502" alt="Primera Relación" src="https://github.com/user-attachments/assets/269706ec-e84e-4515-b11f-3539623734bc" />
 
-  <img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/937b30c5-e86b-4a5e-b6bc-80e8838bb04f" />
-##Segunda Relacion
+#### 🟢 Segunda Relación
+<img width="906" height="502" alt="Segunda Relación" src="https://github.com/user-attachments/assets/937b30c5-e86b-4a5e-b6bc-80e8838bb04f" />
 
-
-  <img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/1b842594-92dd-4a8a-8f04-fb6cbfb0de76" />
-
+#### 🟢 Tercera Relación
+<img width="906" height="502" alt="Tercera Relación" src="https://github.com/user-attachments/assets/1b842594-92dd-4a8a-8f04-fb6cbfb0de76" />
 
