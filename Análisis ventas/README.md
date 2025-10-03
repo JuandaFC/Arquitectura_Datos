@@ -146,9 +146,10 @@ else [Dic]
 - 📎 Anexado de tablas restantes.  
 
 
-### 7️⃣ Ventas_ordenes  
+### 7️⃣ Ventas_ordenes 
+**Columnas originales:** ` OrderID, CustomerID, Total, Estado, Fecha`
 📑 Duplicación de tabla para proceso de anexado.  
-- ✂️ Delimitación de `ProductoID` por `,` en la tabla duplicada.  
+- ✂️ Delimitación de `OrderID` por `,` en la tabla duplicada.  
 - 🔄 Renombrado de columnas para mantener consistencia.  
 - 🧹 Filtrado de filas innecesarias en ambas tablas.  
 - 📎 Anexado de tablas restantes.
@@ -161,8 +162,8 @@ Unificar las tablas de empleados, Clientes y Proveedores en una tabla que se lla
 Se relacionan las tablas venta_detalles, ventas_mesuales y productos ERP
 <img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/269706ec-e84e-4515-b11f-3539623734bc" />
 Primera Relacion
-<img width="664" height="563" alt="image" src="https://github.com/user-attachments/assets/937b30c5-e86b-4a5e-b6bc-80e8838bb04f" />
+<img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/937b30c5-e86b-4a5e-b6bc-80e8838bb04f" />
 Segunda Relacion
-<img width="673" height="676" alt="image" src="https://github.com/user-attachments/assets/1b842594-92dd-4a8a-8f04-fb6cbfb0de76" />
+<img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/1b842594-92dd-4a8a-8f04-fb6cbfb0de76" />
 
 
