@@ -159,11 +159,17 @@ else [Dic]
 Unificar las tablas de empleados, Clientes y Proveedores en una tabla que se llama contactos
   - Se adecuan todas las columnas para que tengan las misma cantidad de columnas y tambien que contengan los mismos nombres
 
-Se relacionan las tablas venta_detalles, ventas_mesuales y productos ERP
+##Se relacionan las tablas venta_detalles, ventas_mesuales y productos ERP
+
+
   <img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/269706ec-e84e-4515-b11f-3539623734bc" />
-Primera Relacion
+##Primera Relacion
+
+
   <img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/937b30c5-e86b-4a5e-b6bc-80e8838bb04f" />
-Segunda Relacion
+##Segunda Relacion
+
+
   <img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/1b842594-92dd-4a8a-8f04-fb6cbfb0de76" />
 
 
