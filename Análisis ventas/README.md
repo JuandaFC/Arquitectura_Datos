@@ -97,7 +97,8 @@ Se revisaron **7 archivos CSV** y se realizaron procesos de limpieza, normalizac
     ```
   - **Pais.1** (validación con abreviaciones: `CO, MX, PE, CL...`).  
 - 🔄 Conversión de `Email`, `Tel` y `Country` a **texto**.  
-- ❌ Eliminación de columnas innecesarias.  
+- ❌ Eliminación de columnas innecesarias.
+- Se cambian las abreviaciones para que aparesca el country completo.
 
 ---
 
@@ -119,18 +120,49 @@ Se revisaron **7 archivos CSV** y se realizaron procesos de limpieza, normalizac
 ---
 
 ### 5️⃣ Ventas_detalle  
-*(Procesada en conjunto con las tablas de ventas)*  
+**Columnas originales:** `OrderID, ProductoID, Cantidad, Precio_Unitario, "" `
+📑 Duplicación de tabla para proceso de anexado.  
+- ✂️ Delimitación de `ProductoID` por `,` en la tabla duplicada.  
+- 🔄 Renombrado de columnas para mantener consistencia.  
+- 🧹 Filtrado de filas innecesarias en ambas tablas.  
+- 📎 Anexado de tablas restantes.  
+- ❌ Eliminación de la columna **""**.  
 
 ### 6️⃣ Ventas_mensuales  
-*(Procesada en conjunto con las tablas de ventas)*  
+**Columnas originales:** ` ProductoID,  año: De enero hasta dicimiembre`
+- ❌ Eliminación de las primeras 1 filas ya que no aportan nada.
+- Colocar la nueva primera fila como  encabezados
+- Crear una Columna personalizada para diciembre para que contenga todos los datos pertinentes:
+if [Dic] = "-" or [Dic] = null then 
+    if [Column15] <> null then [Column15] 
+    else [Column16] 
+else [Dic]
+-Cambiar los meses de enero a diciembre por decimales
+-Ajustar aquellos casillas que que contengan diferentes tipo de valor para que concuerde en la transformacion
+📑 Duplicación de tabla para proceso de anexado.  
+- ✂️ Delimitación de `ProductoID` por `,` en la tabla duplicada.  
+- 🔄 Renombrado de columnas para mantener consistencia.  
+- 🧹 Filtrado de filas innecesarias en ambas tablas.  
+- 📎 Anexado de tablas restantes.  
+
 
 ### 7️⃣ Ventas_ordenes  
-*(Procesada en conjunto con las tablas de ventas)*  
+📑 Duplicación de tabla para proceso de anexado.  
+- ✂️ Delimitación de `ProductoID` por `,` en la tabla duplicada.  
+- 🔄 Renombrado de columnas para mantener consistencia.  
+- 🧹 Filtrado de filas innecesarias en ambas tablas.  
+- 📎 Anexado de tablas restantes.
+- Configurar las fecha en columnas distintas mes, año, dia
+----------------------
 
----
+Unificar las tablas de empleados, Clientes y Proveedores en una tabla que se llama contactos
+  - Se adecuan todas las columnas para que tengan las misma cantidad de columnas y tambien que contengan los mismos nombres
 
-## ✅ Resultado Final
-- Tablas **limpias y normalizadas**.  
-- Corrección de inconsistencias en **correo, teléfono y país**.  
-- Estandarización de variables a **tipo texto**.  
-- Modelo de datos optimizado y listo para análisis en **Power BI**.  
+Se relacionan las tablas venta_detalles, ventas_mesuales y productos ERP
+<img width="906" height="502" alt="image" src="https://github.com/user-attachments/assets/269706ec-e84e-4515-b11f-3539623734bc" />
+Primera Relacion
+<img width="664" height="563" alt="image" src="https://github.com/user-attachments/assets/937b30c5-e86b-4a5e-b6bc-80e8838bb04f" />
+Segunda Relacion
+<img width="673" height="676" alt="image" src="https://github.com/user-attachments/assets/1b842594-92dd-4a8a-8f04-fb6cbfb0de76" />
+
+
