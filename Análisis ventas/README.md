@@ -1,4 +1,5 @@
 # 📊 Transformación de Datos con Power BI
+# Integrantes: Juan David Fino Coy/ Kevin Marin
 
 Se revisaron **7 archivos CSV** y se realizaron procesos de limpieza, normalización y transformación en **Power Query**.
 
