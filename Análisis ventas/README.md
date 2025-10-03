@@ -129,21 +129,28 @@ Se revisaron **7 archivos CSV** y se realizaron procesos de limpieza, normalizac
 - ❌ Eliminación de la columna **""**.  
 
 ### 6️⃣ Ventas_mensuales  
-**Columnas originales:** ` ProductoID,  año: De enero hasta dicimiembre`
-- ❌ Eliminación de las primeras 1 filas ya que no aportan nada.
-- Colocar la nueva primera fila como  encabezados
-- Crear una Columna personalizada para diciembre para que contenga todos los datos pertinentes:
+
+#### 📋 **Estructura Original**
+| Columnas | Descripción |
+|----------|-------------|
+| `ProductoID` | Identificador del producto |
+| `Enero - Diciembre` | 12 columnas de ventas mensuales |
+| `Año` | Periodo temporal de referencia |
+
+#### 🔧 **Transformaciones Aplicadas**
+
+##### **🧹 Limpieza Inicial**
+- ❌ **Eliminación** de primeras filas sin valor informativo
+- 📑 **Promoción** de nueva primera fila como encabezados
+- 🔄 **Reestructuración** completa del layout de datos
+
+##### **📊 Columna Personalizada - Diciembre**
+```powerquery
+// Consolidación de datos de diciembre desde múltiples fuentes
 if [Dic] = "-" or [Dic] = null then 
     if [Column15] <> null then [Column15] 
     else [Column16] 
 else [Dic]
--Cambiar los meses de enero a diciembre por decimales
--Ajustar aquellos casillas que que contengan diferentes tipo de valor para que concuerde en la transformacion
-📑 Duplicación de tabla para proceso de anexado.  
-- ✂️ Delimitación de `ProductoID` por `,` en la tabla duplicada.  
-- 🔄 Renombrado de columnas para mantener consistencia.  
-- 🧹 Filtrado de filas innecesarias en ambas tablas.  
-- 📎 Anexado de tablas restantes.  
 
 
 ### 7️⃣ Ventas_ordenes 
